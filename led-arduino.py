@@ -4,7 +4,7 @@ from nanpy import ArduinoApi, SerialManager
 from telepot.namedtuple import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-connection = SerialManager(device='COM3') #or the port you are yousing
+connection = SerialManager(device='COM3') #or the port you are actually using
 a = ArduinoApi(connection=connection)
 a.pinMode(12, a.OUTPUT)
 a.pinMode(11, a.OUTPUT)
